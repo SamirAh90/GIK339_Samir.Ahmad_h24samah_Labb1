@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Uppgift 1</title>
+    <script src="script.js" defer></script>
+  </head>
+    <!--
+     
+        Jag kan ladda JavaScript på olika sätt bland annat de fyra nedan:
+        1. Skriva JavaScript direkt i HTML med <script>-taggar.
+        2. Länka en extern JavaScript-fil med <script src="fil.js"></script>.
+        3. Använda "defer" för att låta scriptet laddas i bakgrunden och köras när HTML är klar.
+        4. Placera <script>-taggen längst ner i <body> för att HTML ska laddas först.
+       
+        1. Betydelsen av placeringen av <script>-taggen:
+        Var jag placerar <script>-taggen påverkar när JavaScript körs.
+        Om jag lägger scriptet i <head> kan det stoppa HTML från att laddas direkt.
+        Om jag lägger scriptet längst ner i <body> får HTML laddas klart först,
+        vilket gör att sidan visas snabbare och minskar risken för fel.
+
+        2. Hur attributet defer fungerar:
+        När jag använder defer laddas JavaScript-filen i bakgrunden samtidigt som HTML läses in.
+        Scriptet körs först när hela HTML-dokumentet är färdigladdat.
+        Detta gör att jag tryggt kan lägga <script>-taggen i <head> utan att blockera sidans laddning.
+        
+        Jag kopplar ett externt JavaScript till min HTML då det gör koden mer organiserad
+        och lättare för mig att underhålla. Med "defer" ser till jag
+        också att HTML-innehållet laddas först innan scriptet körs, vilket förhindrar fel.
+        I denna kör jag med defer!
+    -->
+
+<body>
+    <!-- visar sidans rubrik -->
+    <h1 style="margin-top: 10rem; font-family: Arial, sans-serif; color: #5a2e0c; text-align: center;">
+      Kaffe och Bulle – Variabler och Scope
+    </h1>
+
+    <!-- Instruktioner om Live Server och konsolen -->
+    <p style="font-family: Arial, sans-serif; text-align: center">
+      Öppna LiveServer i VisualStudio Code för att se scriptets resultat.
+    </p>
+    <p style="font-family: Arial, sans-serif; text-align: center">
+      Öppna DevTools därefter välja Console för att se JavaScript magic
+    </p>
+
+    <!-- Jag markerar extra uppgift -->
+    <p style="font-size: 1.6rem; font-family: Arial, sans-serif; text-align: center; margin-top: 30px; color: #333;">
+      Extra Uppgift 4
+    </p>
+
+    <!-- Skapar en knapp som kör magic -->
+    <div style="text-align: center; margin-top: 20px">
+      <button id="räknaBtn" style="background-color: #8b0000; color: white; padding: 12px 24px; border: none; border-radius: 8px; font-size: 18px; cursor: pointer; font-family: Arial, sans-serif; transition: 0.2s;">
+        Kör räknaren
+      </button>
+    </div>
+</body>
+</html>
