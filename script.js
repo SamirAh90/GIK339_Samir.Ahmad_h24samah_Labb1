@@ -225,7 +225,7 @@ document.getElementById("räknaBtn").addEventListener("click", function () {
     lika: lika,
   };
 
-  // 4. Jag skriver ut allt i konsol
+  // 4. Jag skriver ut allt i konsolen
   console.log("=== Strängresultat ===");
   console.log(textResultat);
 
